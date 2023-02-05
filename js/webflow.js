@@ -161,6 +161,84 @@ module.exports = isArray;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+var _interopRequireWildcard = __webpack_require__(18);
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _exportNames = {
+  IX2EngineActionTypes: true,
+  IX2EngineConstants: true
+};
+exports.IX2EngineConstants = exports.IX2EngineActionTypes = void 0;
+
+var _triggerEvents = __webpack_require__(187);
+
+Object.keys(_triggerEvents).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _triggerEvents[key];
+    }
+  });
+});
+
+var _animationActions = __webpack_require__(94);
+
+Object.keys(_animationActions).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _animationActions[key];
+    }
+  });
+});
+
+var _triggerInteractions = __webpack_require__(188);
+
+Object.keys(_triggerInteractions).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _triggerInteractions[key];
+    }
+  });
+});
+
+var _reducedMotion = __webpack_require__(189);
+
+Object.keys(_reducedMotion).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _reducedMotion[key];
+    }
+  });
+});
+
+var IX2EngineActionTypes = _interopRequireWildcard(__webpack_require__(190));
+
+exports.IX2EngineActionTypes = IX2EngineActionTypes;
+
+var IX2EngineConstants = _interopRequireWildcard(__webpack_require__(191));
+
+exports.IX2EngineConstants = IX2EngineConstants;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
  // @wf-will-never-add-flow-to-this-file
 
 /* globals window, document, navigator, WEBFLOW_ENV_TEST */
@@ -494,84 +572,6 @@ $(Webflow.ready); // Listen for window.onload and resolve deferred
 bindLoad(); // Export commonjs module
 
 module.exports = window.Webflow = Webflow;
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireWildcard = __webpack_require__(18);
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var _exportNames = {
-  IX2EngineActionTypes: true,
-  IX2EngineConstants: true
-};
-exports.IX2EngineConstants = exports.IX2EngineActionTypes = void 0;
-
-var _triggerEvents = __webpack_require__(187);
-
-Object.keys(_triggerEvents).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _triggerEvents[key];
-    }
-  });
-});
-
-var _animationActions = __webpack_require__(94);
-
-Object.keys(_animationActions).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _animationActions[key];
-    }
-  });
-});
-
-var _triggerInteractions = __webpack_require__(188);
-
-Object.keys(_triggerInteractions).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _triggerInteractions[key];
-    }
-  });
-});
-
-var _reducedMotion = __webpack_require__(189);
-
-Object.keys(_reducedMotion).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _reducedMotion[key];
-    }
-  });
-});
-
-var IX2EngineActionTypes = _interopRequireWildcard(__webpack_require__(190));
-
-exports.IX2EngineActionTypes = IX2EngineActionTypes;
-
-var IX2EngineConstants = _interopRequireWildcard(__webpack_require__(191));
-
-exports.IX2EngineConstants = IX2EngineConstants;
 
 /***/ }),
 /* 5 */
@@ -3195,7 +3195,7 @@ exports.mediaQueriesDefined = exports.viewportWidthChanged = exports.actionListP
 
 var _extends2 = _interopRequireDefault(__webpack_require__(30));
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _shared = __webpack_require__(14);
 
@@ -6432,7 +6432,7 @@ exports.clearPlugin = exports.renderPlugin = exports.createPluginInstance = expo
 
 var _IX2LottieUtils = __webpack_require__(267);
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _IX2BrowserSupport = __webpack_require__(48); // eslint-disable-next-line webflow/module-top-level-imports, webflow/packages-must-be-defined
 
@@ -6578,7 +6578,7 @@ var _forEach = _interopRequireDefault(__webpack_require__(302));
 
 var _throttle = _interopRequireDefault(__webpack_require__(305));
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _shared = __webpack_require__(14);
 
@@ -7859,8 +7859,7 @@ __webpack_require__(332);
 __webpack_require__(333);
 __webpack_require__(334);
 __webpack_require__(335);
-__webpack_require__(340);
-module.exports = __webpack_require__(341);
+module.exports = __webpack_require__(336);
 
 
 /***/ }),
@@ -7878,7 +7877,7 @@ module.exports = __webpack_require__(341);
  * Webflow: Brand pages on the subdomain
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 Webflow.define('brand', module.exports = function ($) {
   var api = {};
@@ -8344,7 +8343,7 @@ module.exports = function () {
  * Webflow: focus-visible
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 /*
  * This polyfill comes from https://github.com/WICG/focus-visible
  */
@@ -8631,7 +8630,7 @@ Webflow.define('focus-visible', module.exports = function () {
  * Webflow: focus-within
  */
 
-var Webflow = __webpack_require__(3); // polyfill based off of https://github.com/matteobad/focus-within-polyfill
+var Webflow = __webpack_require__(4); // polyfill based off of https://github.com/matteobad/focus-within-polyfill
 
 
 Webflow.define('focus-within', module.exports = function () {
@@ -8739,7 +8738,7 @@ Webflow.define('focus-within', module.exports = function () {
  * Webflow: focus
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 /*
  * Safari has a weird bug where it doesn't support :focus for links with hrefs,
  * buttons, and input[type=button|submit], so we listen for mousedown events
@@ -8925,7 +8924,7 @@ module.exports = api;
  * Webflow: Interactions 2
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 var ix2 = __webpack_require__(137);
 
@@ -10172,7 +10171,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ixData = void 0;
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var IX2_RAW_DATA_IMPORTED = _constants.IX2EngineActionTypes.IX2_RAW_DATA_IMPORTED;
 
@@ -10572,7 +10571,7 @@ exports.ixRequest = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(30));
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _timm = __webpack_require__(22);
 
@@ -10623,7 +10622,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ixSession = void 0;
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _timm = __webpack_require__(22);
 
@@ -13078,7 +13077,7 @@ exports.ixElements = void 0;
 
 var _timm = __webpack_require__(22);
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _constants$IX2EngineC = _constants.IX2EngineConstants,
     HTML_ELEMENT = _constants$IX2EngineC.HTML_ELEMENT,
@@ -13327,7 +13326,7 @@ var _findLast = _interopRequireDefault(__webpack_require__(276));
 
 var _timm = __webpack_require__(22);
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _shallowEqual = _interopRequireDefault(__webpack_require__(278));
 
@@ -15031,7 +15030,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ixInstances = void 0;
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _shared = __webpack_require__(14);
 
@@ -15378,7 +15377,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ixParameters = void 0;
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _constants$IX2EngineA = _constants.IX2EngineActionTypes,
     IX2_RAW_DATA_IMPORTED = _constants$IX2EngineA.IX2_RAW_DATA_IMPORTED,
@@ -16635,7 +16634,7 @@ exports.getClosestElement = void 0;
 
 var _shared = __webpack_require__(14);
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 /* eslint-env browser */
 
 
@@ -16830,7 +16829,7 @@ var _get = _interopRequireDefault(__webpack_require__(60));
 
 var _clamp = _interopRequireDefault(__webpack_require__(329));
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _IX2VanillaEngine = __webpack_require__(123);
 
@@ -18315,7 +18314,7 @@ module.exports = baseClamp;
  * Webflow: Auto-select links to current page or section
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 Webflow.define('links', module.exports = function ($, _) {
   var api = {};
@@ -18445,7 +18444,7 @@ Webflow.define('links', module.exports = function ($, _) {
  * Webflow: Smooth scroll
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 Webflow.define('scroll', module.exports = function ($) {
   /**
@@ -18702,7 +18701,7 @@ Webflow.define('scroll', module.exports = function ($) {
  * Adds a 'swipe' event to desktop and mobile
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 Webflow.define('touch', module.exports = function ($) {
   var api = {};
@@ -18841,7 +18840,7 @@ Webflow.define('touch', module.exports = function ($) {
  * Webflow: Dropdown component
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 var IXEvents = __webpack_require__(39);
 
@@ -19358,679 +19357,6 @@ Webflow.define('dropdown', module.exports = function ($, _) {
 "use strict";
  // @wf-will-never-add-flow-to-this-file
 
-/* globals
-  window,
-  document,
-  FormData,
-  WEBFLOW_FORM_API_HOST,
-  WEBFLOW_FORM_OLDIE_HOST
-*/
-
-/* eslint-disable no-var */
-
-/**
- * Webflow: Forms
- */
-
-var _interopRequireDefault = __webpack_require__(1);
-
-var _slicedToArray2 = _interopRequireDefault(__webpack_require__(336));
-
-var Webflow = __webpack_require__(3);
-
-Webflow.define('forms', module.exports = function ($, _) {
-  var api = {};
-  var $doc = $(document);
-  var $forms;
-  var loc = window.location;
-  var retro = window.XDomainRequest && !window.atob;
-  var namespace = '.w-form';
-  var siteId;
-  var emailField = /e(-)?mail/i;
-  var emailValue = /^\S+@\S+$/;
-  var alert = window.alert;
-  var inApp = Webflow.env();
-  var listening;
-  var formUrl;
-  var signFileUrl; // MailChimp domains: list-manage.com + mirrors
-
-  var chimpRegex = /list-manage[1-9]?.com/i;
-
-  var disconnected = _.debounce(function () {
-    alert('Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.');
-  }, 100);
-
-  api.ready = api.design = api.preview = function () {
-    // Init forms
-    init(); // Wire document events on published site only once
-
-    if (!inApp && !listening) {
-      addListeners();
-    }
-  };
-
-  function init() {
-    siteId = $('html').attr('data-wf-site');
-    formUrl = "https://webflow.com" + '/api/v1/form/' + siteId; // Work around same-protocol IE XDR limitation - without this IE9 and below forms won't submit
-
-    if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
-      formUrl = formUrl.replace("https://webflow.com", "https://formdata.webflow.com");
-    }
-
-    signFileUrl = "".concat(formUrl, "/signFile");
-    $forms = $(namespace + ' form');
-
-    if (!$forms.length) {
-      return;
-    }
-
-    $forms.each(build);
-  }
-
-  function build(i, el) {
-    // Store form state using namespace
-    var $el = $(el);
-    var data = $.data(el, namespace);
-
-    if (!data) {
-      data = $.data(el, namespace, {
-        form: $el
-      });
-    } // data.form
-
-
-    reset(data);
-    var wrap = $el.closest('div.w-form');
-    data.done = wrap.find('> .w-form-done');
-    data.fail = wrap.find('> .w-form-fail');
-    data.fileUploads = wrap.find('.w-file-upload');
-    data.fileUploads.each(function (j) {
-      initFileUpload(j, data);
-    }); // Accessiblity fixes
-
-    var formName = data.form.attr('aria-label') || data.form.attr('data-name') || 'Form';
-
-    if (!data.done.attr('aria-label')) {
-      data.form.attr('aria-label', formName);
-    }
-
-    data.done.attr('tabindex', '-1');
-    data.done.attr('role', 'region');
-
-    if (!data.done.attr('aria-label')) {
-      data.done.attr('aria-label', formName + ' success');
-    }
-
-    data.fail.attr('tabindex', '-1');
-    data.fail.attr('role', 'region');
-
-    if (!data.fail.attr('aria-label')) {
-      data.fail.attr('aria-label', formName + ' failure');
-    }
-
-    var action = data.action = $el.attr('action');
-    data.handler = null;
-    data.redirect = $el.attr('data-redirect'); // MailChimp form
-
-    if (chimpRegex.test(action)) {
-      data.handler = submitMailChimp;
-      return;
-    } // Custom form action
-
-
-    if (action) {
-      return;
-    } // Webflow forms for hosting accounts
-
-
-    if (siteId) {
-      data.handler = typeof hostedSubmitWebflow === 'function' ? hostedSubmitWebflow : exportedSubmitWebflow;
-      return;
-    } // Alert for disconnected Webflow forms
-
-
-    disconnected();
-  }
-
-  function addListeners() {
-    listening = true; // Handle form submission for Webflow forms
-
-    $doc.on('submit', namespace + ' form', function (evt) {
-      var data = $.data(this, namespace);
-
-      if (data.handler) {
-        data.evt = evt;
-        data.handler(data);
-      }
-    }); // handle checked ui for custom checkbox and radio button
-
-    var CHECKBOX_CLASS_NAME = '.w-checkbox-input';
-    var RADIO_INPUT_CLASS_NAME = '.w-radio-input';
-    var CHECKED_CLASS = 'w--redirected-checked';
-    var FOCUSED_CLASS = 'w--redirected-focus';
-    var FOCUSED_VISIBLE_CLASS = 'w--redirected-focus-visible';
-    var focusVisibleSelectors = ':focus-visible, [data-wf-focus-visible]';
-    var CUSTOM_CONTROLS = [['checkbox', CHECKBOX_CLASS_NAME], ['radio', RADIO_INPUT_CLASS_NAME]];
-    $doc.on('change', namespace + " form input[type=\"checkbox\"]:not(" + CHECKBOX_CLASS_NAME + ')', function (evt) {
-      $(evt.target).siblings(CHECKBOX_CLASS_NAME).toggleClass(CHECKED_CLASS);
-    });
-    $doc.on('change', namespace + " form input[type=\"radio\"]", function (evt) {
-      $("input[name=\"".concat(evt.target.name, "\"]:not(").concat(CHECKBOX_CLASS_NAME, ")")).map(function (i, el) {
-        return $(el).siblings(RADIO_INPUT_CLASS_NAME).removeClass(CHECKED_CLASS);
-      });
-      var $target = $(evt.target);
-
-      if (!$target.hasClass('w-radio-input')) {
-        $target.siblings(RADIO_INPUT_CLASS_NAME).addClass(CHECKED_CLASS);
-      }
-    });
-    CUSTOM_CONTROLS.forEach(function (_ref) {
-      var _ref2 = (0, _slicedToArray2["default"])(_ref, 2),
-          controlType = _ref2[0],
-          customControlClassName = _ref2[1];
-
-      $doc.on('focus', namespace + " form input[type=\"".concat(controlType, "\"]:not(") + customControlClassName + ')', function (evt) {
-        $(evt.target).siblings(customControlClassName).addClass(FOCUSED_CLASS);
-        $(evt.target).filter(focusVisibleSelectors).siblings(customControlClassName).addClass(FOCUSED_VISIBLE_CLASS);
-      });
-      $doc.on('blur', namespace + " form input[type=\"".concat(controlType, "\"]:not(") + customControlClassName + ')', function (evt) {
-        $(evt.target).siblings(customControlClassName).removeClass("".concat(FOCUSED_CLASS, " ").concat(FOCUSED_VISIBLE_CLASS));
-      });
-    });
-  } // Reset data common to all submit handlers
-
-
-  function reset(data) {
-    var btn = data.btn = data.form.find(':input[type="submit"]');
-    data.wait = data.btn.attr('data-wait') || null;
-    data.success = false;
-    btn.prop('disabled', false);
-    data.label && btn.val(data.label);
-  } // Disable submit button
-
-
-  function disableBtn(data) {
-    var btn = data.btn;
-    var wait = data.wait;
-    btn.prop('disabled', true); // Show wait text and store previous label
-
-    if (wait) {
-      data.label = btn.val();
-      btn.val(wait);
-    }
-  } // Find form fields, validate, and set value pairs
-
-
-  function findFields(form, result) {
-    var status = null;
-    result = result || {}; // The ":input" selector is a jQuery shortcut to select all inputs, selects, textareas
-
-    form.find(':input:not([type="submit"]):not([type="file"])').each(function (i, el) {
-      var field = $(el);
-      var type = field.attr('type');
-      var name = field.attr('data-name') || field.attr('name') || 'Field ' + (i + 1);
-      var value = field.val();
-
-      if (type === 'checkbox') {
-        value = field.is(':checked');
-      } else if (type === 'radio') {
-        // Radio group value already processed
-        if (result[name] === null || typeof result[name] === 'string') {
-          return;
-        }
-
-        value = form.find('input[name="' + field.attr('name') + '"]:checked').val() || null;
-      }
-
-      if (typeof value === 'string') {
-        value = $.trim(value);
-      }
-
-      result[name] = value;
-      status = status || getStatus(field, type, name, value);
-    });
-    return status;
-  }
-
-  function findFileUploads(form) {
-    var result = {};
-    form.find(':input[type="file"]').each(function (i, el) {
-      var field = $(el);
-      var name = field.attr('data-name') || field.attr('name') || 'File ' + (i + 1);
-      var value = field.attr('data-value');
-
-      if (typeof value === 'string') {
-        value = $.trim(value);
-      }
-
-      result[name] = value;
-    });
-    return result;
-  }
-
-  var trackingCookieNameMap = {
-    _mkto_trk: 'marketo' // __hstc: 'hubspot',
-
-  };
-
-  function collectEnterpriseTrackingCookies() {
-    var cookies = document.cookie.split('; ').reduce(function (acc, cookie) {
-      var splitCookie = cookie.split('=');
-      var name = splitCookie[0];
-
-      if (name in trackingCookieNameMap) {
-        var mappedName = trackingCookieNameMap[name];
-        var value = splitCookie.slice(1).join('=');
-        acc[mappedName] = value;
-      }
-
-      return acc;
-    }, {});
-    return cookies;
-  }
-
-  function getStatus(field, type, name, value) {
-    var status = null;
-
-    if (type === 'password') {
-      status = 'Passwords cannot be submitted.';
-    } else if (field.attr('required')) {
-      if (!value) {
-        status = 'Please fill out the required field: ' + name;
-      } else if (emailField.test(field.attr('type'))) {
-        if (!emailValue.test(value)) {
-          status = 'Please enter a valid email address for: ' + name;
-        }
-      }
-    } else if (name === 'g-recaptcha-response' && !value) {
-      status = 'Please confirm you’re not a robot.';
-    }
-
-    return status;
-  }
-
-  function exportedSubmitWebflow(data) {
-    preventDefault(data);
-    afterSubmit(data);
-  } // Submit form to MailChimp
-
-
-  function submitMailChimp(data) {
-    reset(data);
-    var form = data.form;
-    var payload = {}; // Skip Ajax submission if http/s mismatch, fallback to POST instead
-
-    if (/^https/.test(loc.href) && !/^https/.test(data.action)) {
-      form.attr('method', 'post');
-      return;
-    }
-
-    preventDefault(data); // Find & populate all fields
-
-    var status = findFields(form, payload);
-
-    if (status) {
-      return alert(status);
-    } // Disable submit button
-
-
-    disableBtn(data); // Use special format for MailChimp params
-
-    var fullName;
-
-    _.each(payload, function (value, key) {
-      if (emailField.test(key)) {
-        payload.EMAIL = value;
-      }
-
-      if (/^((full[ _-]?)?name)$/i.test(key)) {
-        fullName = value;
-      }
-
-      if (/^(first[ _-]?name)$/i.test(key)) {
-        payload.FNAME = value;
-      }
-
-      if (/^(last[ _-]?name)$/i.test(key)) {
-        payload.LNAME = value;
-      }
-    });
-
-    if (fullName && !payload.FNAME) {
-      fullName = fullName.split(' ');
-      payload.FNAME = fullName[0];
-      payload.LNAME = payload.LNAME || fullName[1];
-    } // Use the (undocumented) MailChimp jsonp api
-
-
-    var url = data.action.replace('/post?', '/post-json?') + '&c=?'; // Add special param to prevent bot signups
-
-    var userId = url.indexOf('u=') + 2;
-    userId = url.substring(userId, url.indexOf('&', userId));
-    var listId = url.indexOf('id=') + 3;
-    listId = url.substring(listId, url.indexOf('&', listId));
-    payload['b_' + userId + '_' + listId] = '';
-    $.ajax({
-      url: url,
-      data: payload,
-      dataType: 'jsonp'
-    }).done(function (resp) {
-      data.success = resp.result === 'success' || /already/.test(resp.msg);
-
-      if (!data.success) {
-        console.info('MailChimp error: ' + resp.msg);
-      }
-
-      afterSubmit(data);
-    }).fail(function () {
-      afterSubmit(data);
-    });
-  } // Common callback which runs after all Ajax submissions
-
-
-  function afterSubmit(data) {
-    var form = data.form;
-    var redirect = data.redirect;
-    var success = data.success; // Redirect to a success url if defined
-
-    if (success && redirect) {
-      Webflow.location(redirect);
-      return;
-    } // Show or hide status divs
-
-
-    data.done.toggle(success);
-    data.fail.toggle(!success);
-
-    if (success) {
-      data.done.focus();
-    } else {
-      data.fail.focus();
-    } // Hide form on success
-
-
-    form.toggle(!success); // Reset data and enable submit button
-
-    reset(data);
-  }
-
-  function preventDefault(data) {
-    data.evt && data.evt.preventDefault();
-    data.evt = null;
-  }
-
-  function initFileUpload(i, form) {
-    if (!form.fileUploads || !form.fileUploads[i]) {
-      return;
-    }
-
-    var file;
-    var $el = $(form.fileUploads[i]);
-    var $defaultWrap = $el.find('> .w-file-upload-default');
-    var $uploadingWrap = $el.find('> .w-file-upload-uploading');
-    var $successWrap = $el.find('> .w-file-upload-success');
-    var $errorWrap = $el.find('> .w-file-upload-error');
-    var $input = $defaultWrap.find('.w-file-upload-input');
-    var $label = $defaultWrap.find('.w-file-upload-label');
-    var $labelChildren = $label.children();
-    var $errorMsgEl = $errorWrap.find('.w-file-upload-error-msg');
-    var $fileEl = $successWrap.find('.w-file-upload-file');
-    var $removeEl = $successWrap.find('.w-file-remove-link');
-    var $fileNameEl = $fileEl.find('.w-file-upload-file-name');
-    var sizeErrMsg = $errorMsgEl.attr('data-w-size-error');
-    var typeErrMsg = $errorMsgEl.attr('data-w-type-error');
-    var genericErrMsg = $errorMsgEl.attr('data-w-generic-error'); // Accessiblity fixes
-    // The file upload Input is not stylable by the designer, so we are
-    // going to pretend the Label is the input. ¯\_(ツ)_/¯
-
-    if (!inApp) {
-      $label.on('click keydown', function (e) {
-        if (e.type === 'keydown' && e.which !== 13 && e.which !== 32) {
-          return;
-        }
-
-        e.preventDefault();
-        $input.click();
-      });
-    } // Both of these are added through CSS
-
-
-    $label.find('.w-icon-file-upload-icon').attr('aria-hidden', 'true');
-    $removeEl.find('.w-icon-file-upload-remove').attr('aria-hidden', 'true');
-
-    if (!inApp) {
-      $removeEl.on('click keydown', function (e) {
-        if (e.type === 'keydown') {
-          if (e.which !== 13 && e.which !== 32) {
-            return;
-          }
-
-          e.preventDefault();
-        }
-
-        $input.removeAttr('data-value');
-        $input.val('');
-        $fileNameEl.html('');
-        $defaultWrap.toggle(true);
-        $successWrap.toggle(false);
-        $label.focus();
-      });
-      $input.on('change', function (e) {
-        file = e.target && e.target.files && e.target.files[0];
-
-        if (!file) {
-          return;
-        } // Show uploading
-
-
-        $defaultWrap.toggle(false);
-        $errorWrap.toggle(false);
-        $uploadingWrap.toggle(true);
-        $uploadingWrap.focus(); // Set filename
-
-        $fileNameEl.text(file.name); // Disable submit button
-
-        if (!isUploading()) {
-          disableBtn(form);
-        }
-
-        form.fileUploads[i].uploading = true;
-        signFile(file, afterSign);
-      }); // Setting input width 1px and height equal label
-      // This is so the browser required error will show up
-
-      var height = $label.outerHeight();
-      $input.height(height);
-      $input.width(1);
-    } else {
-      $input.on('click', function (e) {
-        e.preventDefault();
-      });
-      $label.on('click', function (e) {
-        e.preventDefault();
-      });
-      $labelChildren.on('click', function (e) {
-        e.preventDefault();
-      });
-    }
-
-    function parseError(err) {
-      var errorMsg = err.responseJSON && err.responseJSON.msg;
-      var userError = genericErrMsg;
-
-      if (typeof errorMsg === 'string' && errorMsg.indexOf('InvalidFileTypeError') === 0) {
-        userError = typeErrMsg;
-      } else if (typeof errorMsg === 'string' && errorMsg.indexOf('MaxFileSizeError') === 0) {
-        userError = sizeErrMsg;
-      }
-
-      $errorMsgEl.text(userError);
-      $input.removeAttr('data-value');
-      $input.val('');
-      $uploadingWrap.toggle(false);
-      $defaultWrap.toggle(true);
-      $errorWrap.toggle(true);
-      $errorWrap.focus();
-      form.fileUploads[i].uploading = false;
-
-      if (!isUploading()) {
-        reset(form);
-      }
-    }
-
-    function afterSign(err, data) {
-      if (err) {
-        return parseError(err);
-      }
-
-      var fileName = data.fileName;
-      var postData = data.postData;
-      var fileId = data.fileId;
-      var s3Url = data.s3Url;
-      $input.attr('data-value', fileId);
-      uploadS3(s3Url, postData, file, fileName, afterUpload);
-    }
-
-    function afterUpload(err) {
-      if (err) {
-        return parseError(err);
-      } // Show success
-
-
-      $uploadingWrap.toggle(false);
-      $successWrap.css('display', 'inline-block');
-      $successWrap.focus();
-      form.fileUploads[i].uploading = false;
-
-      if (!isUploading()) {
-        reset(form);
-      }
-    }
-
-    function isUploading() {
-      var uploads = form.fileUploads && form.fileUploads.toArray() || [];
-      return uploads.some(function (value) {
-        return value.uploading;
-      });
-    }
-  }
-
-  function signFile(file, cb) {
-    var payload = new URLSearchParams({
-      name: file.name,
-      size: file.size
-    });
-    $.ajax({
-      type: 'GET',
-      url: "".concat(signFileUrl, "?").concat(payload),
-      crossDomain: true
-    }).done(function (data) {
-      cb(null, data);
-    }).fail(function (err) {
-      cb(err);
-    });
-  }
-
-  function uploadS3(url, data, file, fileName, cb) {
-    var formData = new FormData();
-
-    for (var k in data) {
-      formData.append(k, data[k]);
-    }
-
-    formData.append('file', file, fileName);
-    $.ajax({
-      type: 'POST',
-      url: url,
-      data: formData,
-      processData: false,
-      contentType: false
-    }).done(function () {
-      cb(null);
-    }).fail(function (err) {
-      cb(err);
-    });
-  } // Export module
-
-
-  return api;
-});
-
-/***/ }),
-/* 336 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithHoles = __webpack_require__(337);
-
-var iterableToArrayLimit = __webpack_require__(338);
-
-var nonIterableRest = __webpack_require__(339);
-
-function _slicedToArray(arr, i) {
-  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || nonIterableRest();
-}
-
-module.exports = _slicedToArray;
-
-/***/ }),
-/* 337 */
-/***/ (function(module, exports) {
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-module.exports = _arrayWithHoles;
-
-/***/ }),
-/* 338 */
-/***/ (function(module, exports) {
-
-function _iterableToArrayLimit(arr, i) {
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-module.exports = _iterableToArrayLimit;
-
-/***/ }),
-/* 339 */
-/***/ (function(module, exports) {
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
-}
-
-module.exports = _nonIterableRest;
-
-/***/ }),
-/* 340 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
- // @wf-will-never-add-flow-to-this-file
-
 /* globals window, document, jQuery */
 
 /* eslint-disable no-var */
@@ -20039,7 +19365,7 @@ module.exports = _nonIterableRest;
  * Webflow: Lightbox component
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 var CONDITION_INVISIBLE_CLASS = 'w-condition-invisible';
 var CONDVIS_SELECTOR = '.' + CONDITION_INVISIBLE_CLASS;
@@ -20813,7 +20139,7 @@ Webflow.define('lightbox', module.exports = function ($) {
 });
 
 /***/ }),
-/* 341 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20827,7 +20153,7 @@ Webflow.define('lightbox', module.exports = function ($) {
  * Webflow: Slider component
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 var IXEvents = __webpack_require__(39);
 
@@ -21668,5 +20994,5 @@ Webflow.define('slider', module.exports = function ($, _) {
  * Webflow: Interactions 2.0: Init
  */
 Webflow.require('ix2').init(
-{"events":{"e-35":{"id":"e-35","animationType":"custom","eventTypeId":"DROPDOWN_OPEN","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-11","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-36"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e613","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e613","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582539251666},"e-36":{"id":"e-36","animationType":"custom","eventTypeId":"DROPDOWN_CLOSE","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-12","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-35"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e613","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e613","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582539251666},"e-37":{"id":"e-37","animationType":"custom","eventTypeId":"DROPDOWN_OPEN","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-11","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-38"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e61d","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e61d","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582539251666},"e-38":{"id":"e-38","animationType":"custom","eventTypeId":"DROPDOWN_CLOSE","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-12","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-37"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e61d","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e61d","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582539251666},"e-45":{"id":"e-45","animationType":"custom","eventTypeId":"MOUSE_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-3","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-46"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582540082652},"e-46":{"id":"e-46","animationType":"custom","eventTypeId":"MOUSE_SECOND_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-13","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-45"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582540082652},"e-47":{"id":"e-47","animationType":"custom","eventTypeId":"MOUSE_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-7","affectedElements":{"63db861529a69e94a69202aa|68922bd4-b3f6-7087-a008-967bd6772101":{"selector":null,"selectorGuids":["dc0b406a-e222-e5bb-4feb-40f584b872fc"],"limitAffectedElements":null}},"playInReverse":false,"autoStopEventId":"e-48"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582540082652},"e-48":{"id":"e-48","animationType":"custom","eventTypeId":"MOUSE_SECOND_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-8","affectedElements":{"63db861529a69e94a69202aa|68922bd4-b3f6-7087-a008-967bd6772101":{"selector":null,"selectorGuids":["dc0b406a-e222-e5bb-4feb-40f584b872fc"],"limitAffectedElements":null}},"playInReverse":false,"autoStopEventId":"e-47"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582540082652},"e-49":{"id":"e-49","animationType":"custom","eventTypeId":"MOUSE_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-14","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-50"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582540082652},"e-50":{"id":"e-50","animationType":"custom","eventTypeId":"MOUSE_SECOND_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-15","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-49"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|9b57bcc1-bfb7-c2c7-f657-48c3be240c74","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1582540082652},"e-51":{"id":"e-51","animationType":"custom","eventTypeId":"DROPDOWN_OPEN","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-11","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-52"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e609","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e609","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1583064150464},"e-52":{"id":"e-52","animationType":"custom","eventTypeId":"DROPDOWN_CLOSE","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-12","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-51"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e609","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|191248e5-cc13-c8e4-e95b-8439ded3e609","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1583064150466}},"actionLists":{"a-11":{"id":"a-11","title":"Feature Open","actionItemGroups":[{"actionItems":[{"id":"a-11-n","actionTypeId":"STYLE_SIZE","config":{"delay":0,"easing":"outQuint","duration":800,"target":{"useEventTarget":true,"id":"63db861529a69e94a69202aa|51d47cfe-f74a-2475-f51d-299a232ae18d"},"heightValue":40,"widthUnit":"PX","heightUnit":"PX","locked":false}},{"id":"a-11-n-5","actionTypeId":"STYLE_BACKGROUND_COLOR","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".feature-dot","selectorGuids":["ed07332f-4a59-1d21-f67f-79c64e0161fa"]},"globalSwatchId":"","rValue":0,"bValue":0,"gValue":0,"aValue":0}}]},{"actionItems":[{"id":"a-11-n-3","actionTypeId":"STYLE_SIZE","config":{"delay":0,"easing":"outQuint","duration":800,"target":{"useEventTarget":true,"id":"63db861529a69e94a69202aa|51d47cfe-f74a-2475-f51d-299a232ae18d"},"heightValue":60,"widthUnit":"PX","heightUnit":"AUTO","locked":false}},{"id":"a-11-n-6","actionTypeId":"STYLE_BACKGROUND_COLOR","config":{"delay":0,"easing":"easeOut","duration":100,"target":{"useEventTarget":"CHILDREN","selector":".feature-dot","selectorGuids":["ed07332f-4a59-1d21-f67f-79c64e0161fa"]},"globalSwatchId":"4b670e6d","rValue":255,"bValue":255,"gValue":255,"aValue":1}}]}],"useFirstGroupAsInitialState":true,"createdOn":1570756212282},"a-12":{"id":"a-12","title":"Feature Close","actionItemGroups":[{"actionItems":[{"id":"a-12-n","actionTypeId":"STYLE_SIZE","config":{"delay":0,"easing":"outQuint","duration":800,"target":{"useEventTarget":true,"id":"63db861529a69e94a69202aa|51d47cfe-f74a-2475-f51d-299a232ae18d"},"heightValue":40,"widthUnit":"PX","heightUnit":"PX","locked":false}},{"id":"a-12-n-3","actionTypeId":"STYLE_BACKGROUND_COLOR","config":{"delay":0,"easing":"easeIn","duration":100,"target":{"selector":".feature-dot","selectorGuids":["ed07332f-4a59-1d21-f67f-79c64e0161fa"]},"globalSwatchId":"","rValue":0,"bValue":0,"gValue":0,"aValue":0}}]}],"useFirstGroupAsInitialState":false,"createdOn":1570756212282},"a-3":{"id":"a-3","title":"Show dropdown bg","actionItemGroups":[{"actionItems":[{"id":"a-3-n-16","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"value":0,"unit":""}},{"id":"a-3-n-15","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"xValue":0,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}},{"id":"a-3-n-17","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-3-n-18","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"value":"none"}}]},{"actionItems":[{"id":"a-3-n-19","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"value":"block"}},{"id":"a-3-n-20","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"easeIn","duration":200,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"value":1,"unit":""}},{"id":"a-3-n-21","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"easeIn","duration":200,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-3-n-22","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"easeIn","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"xValue":0,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}}]}],"useFirstGroupAsInitialState":false,"createdOn":1520338388010},"a-13":{"id":"a-13","title":"Hide dropdown bg","actionItemGroups":[{"actionItems":[{"id":"a-13-n","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-13-n-2","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"xValue":0,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}},{"id":"a-13-n-3","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"easeIn","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"value":0,"unit":""}},{"id":"a-13-n-4","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_pop_bg.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e360","bef4350d-3765-0b05-d91d-261a5b32e365"]},"value":"none"}}]}],"useFirstGroupAsInitialState":false,"createdOn":1520338388010},"a-7":{"id":"a-7","title":"Rotate icon","actionItemGroups":[{"actionItems":[{"id":"a-7-n-3","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"easeIn","duration":100,"target":{"useEventTarget":"CHILDREN","selector":".x_head_img","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e361"]},"zValue":0,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]},{"actionItems":[{"id":"a-7-n-4","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"easeIn","duration":200,"target":{"useEventTarget":"CHILDREN","selector":".x_head_img","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e361"]},"zValue":180,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]}],"useFirstGroupAsInitialState":false,"createdOn":1520339054431},"a-8":{"id":"a-8","title":"Rotate icon back","actionItemGroups":[{"actionItems":[{"id":"a-8-n-3","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"","duration":100,"target":{"useEventTarget":"CHILDREN","selector":".x_head_img","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e361"]},"zValue":180,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]},{"actionItems":[{"id":"a-8-n-4","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"easeIn","duration":200,"target":{"useEventTarget":"CHILDREN","selector":".x_head_img","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e361"]},"zValue":0,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]}],"useFirstGroupAsInitialState":false,"createdOn":1520339054431},"a-14":{"id":"a-14","title":"show language dropdown","actionItemGroups":[{"actionItems":[{"id":"a-14-n","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"value":0,"unit":""}},{"id":"a-14-n-2","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"xValue":0,"yValue":-10,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}},{"id":"a-14-n-3","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-14-n-4","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"value":"none"}}]},{"actionItems":[{"id":"a-14-n-5","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"value":"block"}},{"id":"a-14-n-6","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"easeIn","duration":300,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"value":1,"unit":""}},{"id":"a-14-n-7","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"easeIn","duration":300,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-14-n-8","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"easeIn","duration":300,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"xValue":0,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}}]}],"useFirstGroupAsInitialState":true,"createdOn":1583062847755},"a-15":{"id":"a-15","title":"hide language dropdown","actionItemGroups":[{"actionItems":[{"id":"a-15-n","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-15-n-2","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"xValue":0,"yValue":-10,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}},{"id":"a-15-n-3","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"easeIn","duration":300,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"value":0,"unit":""}},{"id":"a-15-n-4","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".x_head_pop.hide","selectorGuids":["bef4350d-3765-0b05-d91d-261a5b32e35d","bef4350d-3765-0b05-d91d-261a5b32e364"]},"value":"none"}}]}],"useFirstGroupAsInitialState":false,"createdOn":1583062847755}},"site":{"mediaQueries":[{"key":"main","min":992,"max":10000},{"key":"medium","min":768,"max":991},{"key":"small","min":480,"max":767},{"key":"tiny","min":0,"max":479}]}}
+{"events":{"e":{"id":"e","animationType":"custom","eventTypeId":"DROPDOWN_OPEN","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-16","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-2"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|cec4a6d1-4905-b7d3-b34b-886c3c7e713e","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|cec4a6d1-4905-b7d3-b34b-886c3c7e713e","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1583064150464},"e-2":{"id":"e-2","animationType":"custom","eventTypeId":"DROPDOWN_CLOSE","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-17","affectedElements":{},"playInReverse":false,"autoStopEventId":"e"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"63db861529a69e94a69202aa|cec4a6d1-4905-b7d3-b34b-886c3c7e713e","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"63db861529a69e94a69202aa|cec4a6d1-4905-b7d3-b34b-886c3c7e713e","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1583064150466}},"actionLists":{"a-16":{"id":"a-16","title":"Feature Open 2","actionItemGroups":[{"actionItems":[{"id":"a-16-n","actionTypeId":"STYLE_SIZE","config":{"delay":0,"easing":"outQuint","duration":800,"target":{"useEventTarget":true,"id":"63db861529a69e94a69202aa|51d47cfe-f74a-2475-f51d-299a232ae18d"},"heightValue":5,"widthUnit":"PX","heightUnit":"rem","locked":false}},{"id":"a-16-n-2","actionTypeId":"STYLE_BACKGROUND_COLOR","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".feature-dot-2","selectorGuids":["7b825689-684d-97e3-7b0d-ffffa9746098"]},"globalSwatchId":"","rValue":0,"bValue":0,"gValue":0,"aValue":0}},{"id":"a-16-n-7","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"value":"block","target":{"useEventTarget":"CHILDREN","selector":".text-block-10","selectorGuids":["61a18dd9-03c6-8d53-854b-cb088e9d1e4d"]}}}]},{"actionItems":[{"id":"a-16-n-3","actionTypeId":"STYLE_SIZE","config":{"delay":0,"easing":"outQuint","duration":800,"target":{"useEventTarget":true,"id":"63db861529a69e94a69202aa|51d47cfe-f74a-2475-f51d-299a232ae18d"},"heightValue":60,"widthUnit":"PX","heightUnit":"AUTO","locked":false}},{"id":"a-16-n-4","actionTypeId":"STYLE_BACKGROUND_COLOR","config":{"delay":0,"easing":"easeOut","duration":100,"target":{"useEventTarget":"CHILDREN","selector":".feature-dot-2","selectorGuids":["7b825689-684d-97e3-7b0d-ffffa9746098"]},"globalSwatchId":"4b670e6d","rValue":255,"bValue":255,"gValue":255,"aValue":1}},{"id":"a-16-n-8","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"value":"none","target":{"useEventTarget":"CHILDREN","selector":".text-block-10","selectorGuids":["61a18dd9-03c6-8d53-854b-cb088e9d1e4d"]}}}]}],"useFirstGroupAsInitialState":true,"createdOn":1570756212282},"a-17":{"id":"a-17","title":"Feature Close 2","actionItemGroups":[{"actionItems":[{"id":"a-17-n","actionTypeId":"STYLE_SIZE","config":{"delay":0,"easing":"outQuint","duration":800,"target":{"useEventTarget":true,"id":"63db861529a69e94a69202aa|51d47cfe-f74a-2475-f51d-299a232ae18d"},"heightValue":5,"widthUnit":"PX","heightUnit":"rem","locked":false}},{"id":"a-17-n-2","actionTypeId":"STYLE_BACKGROUND_COLOR","config":{"delay":0,"easing":"easeIn","duration":100,"target":{"selector":".feature-dot-2","selectorGuids":["7b825689-684d-97e3-7b0d-ffffa9746098"]},"globalSwatchId":"","rValue":0,"bValue":0,"gValue":0,"aValue":0}},{"id":"a-17-n-3","actionTypeId":"GENERAL_DISPLAY","config":{"delay":500,"easing":"","duration":0,"value":"block","target":{"useEventTarget":"CHILDREN","selector":".text-block-10","selectorGuids":["61a18dd9-03c6-8d53-854b-cb088e9d1e4d"]}}}]}],"useFirstGroupAsInitialState":false,"createdOn":1570756212282}},"site":{"mediaQueries":[{"key":"main","min":992,"max":10000},{"key":"medium","min":768,"max":991},{"key":"small","min":480,"max":767},{"key":"tiny","min":0,"max":479}]}}
 );
